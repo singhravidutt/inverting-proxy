@@ -55,6 +55,7 @@ func UpdateAuthHeader(h http.Header) {
 		log.Printf("Failure while updating auth header for connection %v", err)
 		return
 	}
+	log.Printf("token type %v", token.Type())
 	h.Set("Authorization", token.Type()+" "+token.AccessToken)
 }
 func GetAuthToken() (*oauth2.Token, error) {

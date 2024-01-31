@@ -76,6 +76,7 @@ func main() {
 			defer cancel()
 			var authHeader http.Header
 			authproxy.UpdateAuthHeader(authHeader)
+			log.Printf("Auth header %v", authHeader)
 			backendConn, err := connection.DialWebsocket(ctx, backendURL, authHeader)
 			if err != nil {
 				log.Printf("Failure dialing the backend connection: %v", err)
