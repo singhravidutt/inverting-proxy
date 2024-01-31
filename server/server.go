@@ -38,7 +38,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/inverting-proxy/agent/utils"
+	"github.com/singhravidutt/inverting-proxy/agent/utils"
 )
 
 var (

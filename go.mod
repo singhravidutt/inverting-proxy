@@ -1,4 +1,4 @@
-module github.com/google/inverting-proxy
+module github.com/singhravidutt/inverting-proxy
 
 go 1.18
 

@@ -16,7 +16,7 @@ This bridge is implemented via two proxies:
 ## Installation
 
 ```sh
-go install github.com/google/inverting-proxy/utils/tcpbridge/...@latest
+go install github.com/singhravidutt/inverting-proxy/utils/tcpbridge/...@latest
 ```
 
 ## System Diagram

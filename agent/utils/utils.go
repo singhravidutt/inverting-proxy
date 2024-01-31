@@ -37,7 +37,7 @@ import (
 	"time"
 
 	"cloud.google.com/go/compute/metadata"
-	"github.com/google/inverting-proxy/agent/metrics"
+	"github.com/singhravidutt/inverting-proxy/agent/metrics"
 )
 
 const (

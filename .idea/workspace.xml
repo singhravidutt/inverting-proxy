@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a4d5306f-30d7-40d4-a627-0d03df3ac05a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/agent/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/agent/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/agent.go" beforeDir="false" afterPath="$PROJECT_DIR$/agent/agent.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/banner/banner.go" beforeDir="false" afterPath="$PROJECT_DIR$/agent/banner/banner.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/sessions/sessions.go" beforeDir="false" afterPath="$PROJECT_DIR$/agent/sessions/sessions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/utils/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/agent/utils/utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/websockets/shim.go" beforeDir="false" afterPath="$PROJECT_DIR$/agent/websockets/shim.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/cache/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/cache/cache.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/proxy.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/proxy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/store.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/websockets/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/testing/websockets/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/tcpbridge/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/utils/tcpbridge/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/tcpbridge/tcp-bridge-backend/tcp-bridge-backend.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/tcpbridge/tcp-bridge-backend/tcp-bridge-backend.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/tcpbridge/tcp-bridge-frontend/tcp-bridge-frontend.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/tcpbridge/tcp-bridge-frontend/tcp-bridge-frontend.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="G3PluginsProjectSettings">
+    <appliedSettings>
+      <entry key="LinkifyInternalShortlinks" value="true" />
+      <entry key="RecognizedNullableAnnotations" value="true" />
+    </appliedSettings>
+  </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2bhvvxR1eD3HABHBco6ycEauaQw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "configurable..is.expanded": "false",
+    "configurable.GoLibrariesConfigurable.is.expanded": "true",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/Volumes/thirdParty/workspace/inverting-proxy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "com.goide.configuration.GoLibrariesConfigurableProvider",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utils/tcpbridge/authproxy" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="inverting-proxy" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="inverting-proxy" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4d5306f-30d7-40d4-a627-0d03df3ac05a" name="Changes" comment="" />
+      <created>1706680359844</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706680359844</updated>
+      <workItem from="1706680361340" duration="3696000" />
+      <workItem from="1706693104731" duration="3153000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/agent/sessions/sessions.go</url>
+          <line>45</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

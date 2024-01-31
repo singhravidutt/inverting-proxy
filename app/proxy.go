@@ -36,9 +36,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/inverting-proxy/app/cache"
-	"github.com/google/inverting-proxy/app/store"
-	"github.com/google/inverting-proxy/app/types"
+	"github.com/singhravidutt/inverting-proxy/app/cache"
+	"github.com/singhravidutt/inverting-proxy/app/store"
+	"github.com/singhravidutt/inverting-proxy/app/types"
 
 	"google.golang.org/appengine/v2"
 	"google.golang.org/appengine/v2/datastore"

@@ -20,10 +20,10 @@ RUN apt-get update && apt-get upgrade -y && \
       git \
       wget && \
     mkdir -p /opt/bin && \
-    mkdir -p /opt/src/github.com/google/inverting-proxy
+    mkdir -p /opt/src/github.com/singhravidutt/inverting-proxy
 
-ADD ./ /opt/src/github.com/google/inverting-proxy
-WORKDIR /opt/src/github.com/google/inverting-proxy
+ADD ./ /opt/src/github.com/singhravidutt/inverting-proxy
+WORKDIR /opt/src/github.com/singhravidutt/inverting-proxy
 
 RUN wget -O /opt/go1.20.7.linux-amd64.tar.gz \
       https://storage.googleapis.com/golang/go1.20.7.linux-amd64.tar.gz && \
@@ -31,7 +31,7 @@ RUN wget -O /opt/go1.20.7.linux-amd64.tar.gz \
     export PATH=${PATH}:/usr/local/go/bin/:/opt/bin/ && \
     export GOPATH=/opt/ && \
     echo "Building Proxy Agent" && \
-    go build -o ${GOPATH}/bin/proxy-forwarding-agent /opt/src/github.com/google/inverting-proxy/agent/agent.go && \
+    go build -o ${GOPATH}/bin/proxy-forwarding-agent /opt/src/github.com/singhravidutt/inverting-proxy/agent/agent.go && \
     echo "Clean up go files and preserve License" && \
     rm -rf /opt/go1.20.7.linux-amd64.tar.gz && \    
     find /usr/local/go/ -mindepth 1 ! -name 'LICENSE' -exec rm -rf {} + || true

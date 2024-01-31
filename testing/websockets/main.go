@@ -32,8 +32,8 @@ import (
 	"net/http/httputil"
 	"net/url"
 
-	"github.com/google/inverting-proxy/agent/metrics"
-	"github.com/google/inverting-proxy/agent/websockets"
+	"github.com/singhravidutt/inverting-proxy/agent/metrics"
+	"github.com/singhravidutt/inverting-proxy/agent/websockets"
 )
 
 var (

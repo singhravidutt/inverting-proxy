@@ -43,8 +43,8 @@ import (
 	"path"
 	"sync"
 
-	"github.com/google/inverting-proxy/utils/tcpbridge/authproxy"
-	"github.com/google/inverting-proxy/utils/tcpbridge/connection"
+	"github.com/singhravidutt/inverting-proxy/utils/tcpbridge/authproxy"
+	"github.com/singhravidutt/inverting-proxy/utils/tcpbridge/connection"
 )
 
 var (

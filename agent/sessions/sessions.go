@@ -53,8 +53,8 @@ import (
 	"time"
 
 	"github.com/golang/groupcache/lru"
-	"github.com/google/inverting-proxy/agent/metrics"
 	"github.com/google/uuid"
+	"github.com/singhravidutt/inverting-proxy/agent/metrics"
 	"golang.org/x/net/publicsuffix"
 )
 

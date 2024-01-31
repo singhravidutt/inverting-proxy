@@ -46,11 +46,11 @@ import (
 	"golang.org/x/oauth2/google"
 	compute "google.golang.org/api/compute/v1"
 
-	"github.com/google/inverting-proxy/agent/banner"
-	"github.com/google/inverting-proxy/agent/metrics"
-	"github.com/google/inverting-proxy/agent/sessions"
-	"github.com/google/inverting-proxy/agent/utils"
-	"github.com/google/inverting-proxy/agent/websockets"
+	"github.com/singhravidutt/inverting-proxy/agent/banner"
+	"github.com/singhravidutt/inverting-proxy/agent/metrics"
+	"github.com/singhravidutt/inverting-proxy/agent/sessions"
+	"github.com/singhravidutt/inverting-proxy/agent/utils"
+	"github.com/singhravidutt/inverting-proxy/agent/websockets"
 )
 
 const (

@@ -44,7 +44,7 @@ import (
 	"net/http/httputil"
 	"net/url"
 
-	"github.com/google/inverting-proxy/utils/tcpbridge/connection"
+	"github.com/singhravidutt/inverting-proxy/utils/tcpbridge/connection"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/h2c"
 )
