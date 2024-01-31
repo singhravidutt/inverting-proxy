@@ -49,7 +49,7 @@ import (
 
 var (
 	frontendPort = flag.Int("frontend-port", 8080, "the port to serve on")
-	backend      = flag.String("backend", "", "URL of the backend server for the TCP-over-WS bridge")
+	backend      = flag.String("connect-endpoint", "", "URL of the backend server for the TCP-over-WS bridge")
 )
 
 func main() {
