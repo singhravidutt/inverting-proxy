@@ -38,10 +38,12 @@ import (
 	"io"
 	"log"
 	"net"
+	"net/http"
 	"net/url"
 	"path"
 	"sync"
 
+	"github.com/google/inverting-proxy/utils/tcpbridge/authproxy"
 	"github.com/google/inverting-proxy/utils/tcpbridge/connection"
 )
 
@@ -72,7 +74,9 @@ func main() {
 			defer conn.Close()
 			ctx, cancel := context.WithCancel(context.Background())
 			defer cancel()
-			backendConn, err := connection.DialWebsocket(ctx, backendURL, nil)
+			var authHeader http.Header
+			authproxy.UpdateAuthHeader(authHeader)
+			backendConn, err := connection.DialWebsocket(ctx, backendURL, authHeader)
 			if err != nil {
 				log.Printf("Failure dialing the backend connection: %v", err)
 				return
