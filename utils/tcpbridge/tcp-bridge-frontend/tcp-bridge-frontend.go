@@ -76,6 +76,7 @@ func main() {
 			defer cancel()
 			authHeader := make(http.Header)
 			authproxy.UpdateAuthHeader(authHeader)
+			authHeader.Set("Host", backendURL.Host)
 			log.Printf("Auth header %v", authHeader)
 			backendConn, err := connection.DialWebsocket(ctx, backendURL, authHeader)
 			if err != nil {

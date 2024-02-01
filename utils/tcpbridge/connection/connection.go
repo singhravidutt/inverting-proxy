@@ -89,7 +89,8 @@ func (c *WebsocketNetConn) Write(bs []byte) (count int, err error) {
 // DialWebsocket establishes a connection with the given server using websocket as the
 // underlying transport layer.
 func DialWebsocket(ctx context.Context, backendURL *url.URL, h http.Header) (net.Conn, error) {
-	conn, _, err := websocket.DefaultDialer.DialContext(ctx, backendURL.String(), h)
+	conn, response, err := websocket.DefaultDialer.DialContext(ctx, backendURL.String(), h)
+	log.Printf("response %v", response)
 	if err != nil {
 		return nil, fmt.Errorf("unable to dial websocket: %w", err)
 	}
