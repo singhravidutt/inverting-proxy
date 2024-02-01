@@ -74,7 +74,7 @@ func main() {
 			defer conn.Close()
 			ctx, cancel := context.WithCancel(context.Background())
 			defer cancel()
-			var authHeader http.Header
+			authHeader := make(http.Header)
 			authproxy.UpdateAuthHeader(authHeader)
 			log.Printf("Auth header %v", authHeader)
 			backendConn, err := connection.DialWebsocket(ctx, backendURL, authHeader)
