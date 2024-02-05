@@ -78,6 +78,7 @@ func main() {
 			authproxy.UpdateAuthHeader(authHeader)
 			authHeader.Set("Host", backendURL.Host)
 			log.Printf("Auth header %v", authHeader)
+			log.Printf("BackendUrl %v", backendURL)
 			backendConn, err := connection.DialWebsocket(ctx, backendURL, authHeader)
 			if err != nil {
 				log.Printf("Failure dialing the backend connection: %v", err)
