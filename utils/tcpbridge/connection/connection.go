@@ -62,6 +62,7 @@ func (c *WebsocketNetConn) Read(bs []byte) (count int, err error) {
 		if err != nil {
 			return 0, err
 		}
+		log.Printf("Recieved from ws type:%v, megssage: %v", msgType, msg)
 		if msgType != websocket.TextMessage {
 			continue
 		}
@@ -74,12 +75,15 @@ func (c *WebsocketNetConn) Read(bs []byte) (count int, err error) {
 	for count = 0; count < len(bs) && count < len(c.bufferedMsg); count++ {
 		bs[count] = c.bufferedMsg[count]
 	}
+	log.Printf("Writing to conn megssage: %v", bs)
 	c.bufferedMsg = c.bufferedMsg[count:]
 	return count, nil
 }
 
 // Write implements the io.Writer interface.
 func (c *WebsocketNetConn) Write(bs []byte) (count int, err error) {
+	log.Printf("Recieved from client %v", bs)
+	log.Printf("Writing to ws from client %v", []byte(hex.EncodeToString(bs))
 	if err := c.WriteMessage(websocket.TextMessage, []byte(hex.EncodeToString(bs))); err != nil {
 		return 0, fmt.Errorf("error writing a websocket message: %w", err)
 	}
