@@ -83,7 +83,7 @@ func (c *WebsocketNetConn) Read(bs []byte) (count int, err error) {
 // Write implements the io.Writer interface.
 func (c *WebsocketNetConn) Write(bs []byte) (count int, err error) {
 	log.Printf("Recieved from client %v", bs)
-	log.Printf("Writing to ws from client %v", []byte(hex.EncodeToString(bs))
+	log.Printf("Writing to ws from client %v", []byte(hex.EncodeToString(bs)))
 	if err := c.WriteMessage(websocket.TextMessage, []byte(hex.EncodeToString(bs))); err != nil {
 		return 0, fmt.Errorf("error writing a websocket message: %w", err)
 	}
